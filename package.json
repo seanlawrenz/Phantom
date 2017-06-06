@@ -1,0 +1,19 @@
+{
+  "name": "phantom",
+  "version": "1.0.0",
+  "description": "code challenge",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanlawrenz/Phantom.git"
+  },
+  "author": "Sean Lawrenz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seanlawrenz/Phantom/issues"
+  },
+  "homepage": "https://github.com/seanlawrenz/Phantom#readme"
+}
