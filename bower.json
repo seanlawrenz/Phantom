@@ -1,0 +1,22 @@
+{
+  "name": "phantom",
+  "description": "code challenge",
+  "main": "server.js",
+  "authors": [
+    "Sean Lawrenz"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/seanlawrenz/Phantom",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.6.4",
+    "angular-resource": "^1.6.4"
+  }
+}

@@ -15,5 +15,19 @@
   "bugs": {
     "url": "https://github.com/seanlawrenz/Phantom/issues"
   },
-  "homepage": "https://github.com/seanlawrenz/Phantom#readme"
+  "homepage": "https://github.com/seanlawrenz/Phantom#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "compression": "^1.6.2",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^1.3.2",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "method-override": "^2.3.9",
+    "mocha": "^3.4.2",
+    "mongoose": "^4.10.4",
+    "morgan": "^1.8.2",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  }
 }

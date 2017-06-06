@@ -1,1 +1,4 @@
 node_modules
+public/lib/angular
+public/lib/angular-resource
+public/lib/angular-route
