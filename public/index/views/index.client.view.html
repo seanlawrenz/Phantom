@@ -1,0 +1,16 @@
+<section ng-controller="IndexController">
+	<!-- If the user is not authenticated show the authentication link -->
+	<div data-ng-show="!authentication.user">
+		<a href="/signup">Signup</a>
+		<a href="/signin">Signin</a>
+	</div>
+	<!-- Otherwise, show the user details and application links -->
+	<div data-ng-show="authentication.user">
+		<h1>Hello <span data-ng-bind="authentication.user.fullName"></span></h1>	
+		<a href="/signout">Signout</a>
+		<ul>
+			<li><a href="/#!/posts">List Posts</a></li>
+			<li><a href="/#!/posts/create">Create Post</a></li>
+		</ul>
+	</div>
+</section>

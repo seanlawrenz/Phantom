@@ -1,5 +1,4 @@
 'use strict';
-'use strict';
 
 angular.module('posts').controller('PostsController', ['$scope','$routeParams','$location', 'Authentication', 'Posts',
 	function($scope, $routeParams, $location, Authentication, Posts){
@@ -7,12 +6,12 @@ angular.module('posts').controller('PostsController', ['$scope','$routeParams','
 
 		//title and content form fields
 		$scope.create = function(){
-			var posts = new Posts({
+			var post = new Posts({
 				title: this.title,
 				content: this.content
 			});
 
-			posts.$save(function(response){
+			post.$save(function(response){
 				$location.path('posts/' + response._id);
 			},
 			function(errorResponse){
@@ -22,7 +21,7 @@ angular.module('posts').controller('PostsController', ['$scope','$routeParams','
 
 		//Find method
 		$scope.find = function(){
-			$scope.post = Posts.query();
+			$scope.posts = Posts.query();
 		};
 
 		//Find one method
@@ -44,9 +43,9 @@ angular.module('posts').controller('PostsController', ['$scope','$routeParams','
 		$scope.delete = function(post){
 			if(post){
 				post.$remove(function(){
-					for (var i in $scope.posts){
-						if($scope.posts[i] === post){
-							$scope.posts.splice(i,1);
+					for (var i in $scope.post){
+						if($scope.post[i] === post){
+							$scope.post.splice(i,1);
 						}
 					}
 				});

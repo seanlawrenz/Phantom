@@ -2,7 +2,7 @@
 
 // Load the module dependencies
 var users = require('../../app/controllers/users.server.controller'),
-	posts = require('../../app/controllers/post.server.controller');
+	posts = require('../../app/controllers/posts.server.controller');
 
 // Define the routes module' method
 module.exports = function(app) {

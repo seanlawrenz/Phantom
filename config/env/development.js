@@ -2,7 +2,7 @@
 
 module.exports = {
 	//Mongoose
-	db: 'mongodb://localhost/mean-book',
+	db: 'mongodb://localhost/phantom',
 	//Cookie stored session
 	sessionSecret: 'shhItsASecret'
 };

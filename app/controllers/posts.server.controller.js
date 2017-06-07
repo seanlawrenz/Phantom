@@ -1,7 +1,7 @@
 'use strict';
 
 var mongoose = require('mongoose'),
-		post = mongoose.model('Post');
+		Post = mongoose.model('Post');
 
 //Error handeling function. To be used for every request
 var getErrorMessage = function(err){

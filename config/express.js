@@ -28,11 +28,13 @@ module.exports = function(db){
 	//Middlewear
 	//Body-Parser extract the entire body portion of an incoming request to make the res.body easier to handle
 	app.use(bodyParser.urlencoded({
-		extended:true
+		extended: true
 	}));
+	
+	//Formats data to be in JSON
 	app.use(bodyParser.json());
-	//Lets you use HTTP verbs such as PUT or DELETE in places where the client doesn't support it.
-	app.use(methodOverride);
+	//For PUT and DELETE requests
+	app.use(methodOverride());
 
 	// Configure the MongoDB session storage
 	var mongoStore = new MongoStore({
