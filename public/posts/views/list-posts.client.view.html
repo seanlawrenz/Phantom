@@ -1,14 +1,12 @@
 <section data-ng-controller="PostsController" data-ng-init="find()">
-	<h1>posts</h1>
+	<h1>All Posts</h1>
 		<!-- The list of post -->
-	<div data-ng-repeat="post in posts">
-		<a data-ng-href="#!/posts/{{post._id}}" data-ng-bind="post.title"></a>
-		<br>
-		<small data-ng-bind="post.created | date:'medium'"></small><small>/</small><small data-ng-bind="post.creator.fullName"></small>
+	<div class="list-posts" data-ng-repeat="post in posts">
+		<p><a data-ng-href="#!/posts/{{post._id}}">{{post.title}}</a> <small><em>{{post.created | date:'medium'}} | {{post.creator.fullName}}</small></p></em>
 		<p data-ng-bind="post.content"></p>
 	</div>
 	<!-- If there are no posts in the list, suggest the user's create a new post -->
 	<div data-ng-hide="!posts || posts.length">
-		No posts yet, why don't you <a href="/#!/posts/create">create one</a>?
+		<p>No posts yet, why don't you <a href="/#!/posts/create">create one</a>?</p>
 	</div>
 </section>

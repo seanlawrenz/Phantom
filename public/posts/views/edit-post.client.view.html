@@ -1,24 +1,22 @@
-<section data-ng-controller="PostsController" data-ng-init="findOne()">
-	<h1>Edit Article</h1>
+<div class="post-building" data-ng-controller="PostsController" data-ng-init="findOne()">
+	<h1>Edit Post</h1>
 	<form data-ng-submit="update()" novalidate>
-		<div>
+		<div class="form-group">
 			<label for="title">Title</label>
 			<div>
-				<input type="text" data-ng-model="post.title" id="title" placeholder="Title" required>
+				<input type="text" class="form-control" data-ng-model="post.title" id="title" placeholder="Title" required>
 			</div>
 		</div>
-		<div>
+		<div class="form-group">
 			<label for="content">Content</label>
 			<div>
-				<textarea data-ng-model="post.content" id="content" cols="30" rows="10" placeholder="Content"></textarea>
+				<textarea class="form-control" data-ng-model="post.content" id="content" cols="30" rows="10" placeholder="Content"></textarea>
 			</div>
 		</div>
-		<div>
-			<input type="submit" value="Update">
-		</div>
+		<button type="submit" class="btn btn-default">Submit</button>
 		<div data-ng-show="error">
 			<strong data-ng-bind="error"></strong>
 		</div>
 	</form>
 	</div>
-</section>
+</div>

@@ -1,0 +1,29 @@
+body {
+	padding-top: 50px;
+}
+.main {
+	padding: 1em 0.5em;
+	text-align: center;
+}
+
+.main p{
+	text-align: left;
+}
+
+.post-building{
+	margin: 0 auto;
+	width: 100%;
+}
+
+.list-posts{
+	border-bottom: 1px solid #ccc;
+	padding: 1em 0;
+	width: 90%;
+	margin: 0 auto;
+}
+
+@media (min-width: 1024px){
+	.post-building{
+		width: 80%;
+	}
+}

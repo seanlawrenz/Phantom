@@ -1,16 +1,10 @@
 <section ng-controller="IndexController">
 	<!-- If the user is not authenticated show the authentication link -->
-	<div data-ng-show="!authentication.user">
-		<a href="/signup">Signup</a>
-		<a href="/signin">Signin</a>
-	</div>
+	
 	<!-- Otherwise, show the user details and application links -->
 	<div data-ng-show="authentication.user">
-		<h1>Hello <span data-ng-bind="authentication.user.fullName"></span></h1>	
-		<a href="/signout">Signout</a>
-		<ul>
-			<li><a href="/#!/posts">List Posts</a></li>
-			<li><a href="/#!/posts/create">Create Post</a></li>
-		</ul>
+		<h1>Hello <span data-ng-bind="authentication.user.fullName"></span></h1>
 	</div>
+	<p>Asymmetrical pug paleo banh mi, tote bag fingerstache waistcoat dreamcatcher tilde cronut deep v marfa. Blog hexagon bicycle rights, shoreditch four dollar toast cloud bread portland umami jean shorts. Tattooed you probably haven't heard of them lomo, bicycle rights DIY snackwave truffaut fanny pack celiac wayfarers listicle. You probably haven't heard of them disrupt lumbersexual lyft, selfies polaroid actually. Scenester dreamcatcher swag hammock, gastropub sriracha subway tile quinoa cronut migas hexagon keytar. Plaid selfies schlitz, try-hard franzen brunch copper mug XOXO tote bag letterpress marfa gentrify succulents. Church-key shabby chic put a bird on it street art, selfies hella knausgaard vegan kickstarter farm-to-table.</p>
+	<a href="/#!/posts"><button class="btn">Check out all the posts</button></a>
 </section>

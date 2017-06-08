@@ -24,6 +24,10 @@ var PostSchema = new Schema({
 	creator: {
 		type: Schema.ObjectId,
 		ref: 'User'
+	},
+	score:{
+		type: Number,
+		default: 0
 	}
 });
 

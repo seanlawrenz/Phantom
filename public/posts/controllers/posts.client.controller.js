@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('posts').controller('PostsController', ['$scope','$routeParams','$location', 'Authentication', 'Posts',
+angular.module('posts').controller('PostsController', ['$scope','$routeParams','$location','Authentication', 'Posts',
 	function($scope, $routeParams, $location, Authentication, Posts){
 		$scope.authentication = Authentication;
 

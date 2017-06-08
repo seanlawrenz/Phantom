@@ -54,6 +54,7 @@ exports.update = function(req, res) {
 	// Update the post fields
 	post.title = req.body.title;
 	post.content = req.body.content;
+	post.score = req.body.score;
 
 	// Try saving the updated post
 	post.save(function(err) {

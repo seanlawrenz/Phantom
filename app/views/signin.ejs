@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><%=title%></title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title><%= title %></title>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/custom.css">
 </head>
 <body>
-	<%for(var i in message){%>
-		<div class="flash"><%=message[i]%></div>
-	<% }%>
-	<form action="/signin" method="post">
-		<div>
-			<label>Username:</label>
-			<input type="text" name="username">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<a class="navbar-brand" href="/#!/">Home</a>
+	</nav>
+	<div class="container">
+    	<div class="main">
+    		<%for(var i in message){%>
+				<div class="flash"><%=message[i]%></div>
+			<% }%>
+			<form action="/signin" method="post">
+				<div class="form-group">
+					<label>Username:</label>
+					<input class="form-control" type="text" name="username">
+				</div>
+				<div class="form-group">
+					<label>Password:</label>
+					<input class="form-control" type="password" name="password">
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
 		</div>
-		<div>
-			<label>Password:</label>
-			<input type="password" name="password">
-		</div>
-		<div>
-			<input type="submit" value="Sign in">
-		</div>
-	</form>
+	</div>
 </body>
 </html>

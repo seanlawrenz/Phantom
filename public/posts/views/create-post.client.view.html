@@ -1,26 +1,23 @@
 <!-- The create article view -->
-<section data-ng-controller="PostsController">
-	<h1>New Article</h1>
-	<!-- The new article form -->
+<div class="post-building" data-ng-controller="PostsController">
+	<h1>New Post</h1>
 	<form data-ng-submit="create()" novalidate>
-		<div>
+		<div class="form-group">
 			<label for="title">Title</label>
 			<div>
-				<input type="text" data-ng-model="title" id="title" placeholder="Title" required>
+				<input type="text" class="form-control" data-ng-model="title" id="title" placeholder="Title" required>
 			</div>
 		</div>
-		<div>
+		<div class="form-group">
 			<label for="content">Content</label>
 			<div>
-				<textarea data-ng-model="content" id="content" cols="30" rows="10" placeholder="Content"></textarea>
+				<textarea class="form-control" data-ng-model="content" id="content" cols="30" rows="10" placeholder="Content"></textarea>
 			</div>
 		</div>
-		<div>
-			<input type="submit">
-		</div>
+		<button type="submit" class="btn btn-default">Submit</button>
 		<!-- The error message element -->
 		<div data-ng-show="error">
 			<strong data-ng-bind="error"></strong>
 		</div>
 	</form>
-</section>
+</div>
