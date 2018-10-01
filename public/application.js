@@ -16,4 +16,4 @@ angular.element(document).ready(function(){
 	angular.bootstrap(document,[mainApplicationModuleName]);
 });
 
-// Sean
+// Sean's revision
